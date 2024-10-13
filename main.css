@@ -1,0 +1,332 @@
+html {
+    box-sizing: border-box;
+    font-family: Dela Gothic One;
+    max-width: 2560px;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --index: calc(1vw + 1vh)
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    background-color: #3C2116;
+    color: #ffffff;
+    line-height: 1.55;
+}
+
+.first_main_container {
+    height: 100vh;
+    display: flex;
+}
+
+.main_img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+}
+
+.container_s_main_zagolovrom{
+    z-index: 1;
+    width: 100%;
+    height: 90vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.main_border_zagolovok{
+    position: absolute;
+    width: 89.84375vw;
+    height: 22.5vh;
+    min-height: 200px;
+    background-color: #3C2116;
+    border-color: #3C2116;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;    
+    display: flex;
+}
+
+.main_zagolovok {
+    font-size: calc(var(--index) * 2.5);;
+    font-size: 5.25vw;
+    text-align: center;    
+}
+
+.second_main_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button {
+    width: 280px;
+    height: 200px;
+    background-color: #3C2116;
+    border-color: #ffffff;
+    border-radius: 50px;
+    margin: 111px 50px 111px;
+}
+
+.button_img{
+    width: 100px;
+    margin: 10px 90px 10px;
+}
+
+.button:hover{
+    background: rgb(0, 0, 0, 20%)
+}
+
+.button_text {
+    width: 280px;
+    color: #ffffff;
+    text-align: end;
+    justify-content: center;
+    font-size: 22px;
+    font-family: Dela Gothic One;
+}
+
+.third_main_container {
+    background: 80vh;
+    background-color: #291710;
+    background-image: linear-gradient(to top, rgb(60, 33 ,22, 100%) 0%, rgb(41, 23, 16, 80%) 5%, rgb(41, 23, 16, 80%) 95%, rgb(60, 33, 22, 100%) 100%);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.round_photo{
+    height: 600px;
+    margin: 130px 120px 130px;
+}
+
+.round_main_text {
+    width: 700px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    font-size: calc(var(--index) * 2.5);;
+    font-size: 36px;
+    margin: 130px 130px 130px;
+}
+
+.fourth_main_container{
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;    
+}
+
+.box_animation{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 520px;
+    background: #ffffff;
+    border-radius: 20px;
+    margin: 111px 50px 0px;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    overflow: hidden;
+    inset: 10px;
+}
+
+.box_animation .fourth_border_container{
+    width: 340px;
+    height: 500px;    
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.box_animation::before{
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 140%;
+    background: #000;
+    animation: animate 8s linear infinite;
+}
+@keyframes animate{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.fourth_container_img{
+    width: 300px;
+    margin: 20px 20px 20px;
+}
+
+.fourth_border_text{
+    max-width: 300px;
+    margin: 0 20px;
+    font-size: 24px;
+    color: #000;
+    text-align: center;
+}
+
+.scroll_area{
+    max-width: 100vw;
+    margin: 0 auto;
+    max-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    cursor: pointer;
+}
+
+.scroll_area_body{
+    cursor: auto;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    border: 0.20em solid rgb(41, 23, 16, 100%);
+    border-radius: 100vw;
+    background: linear-gradient(rgb(0, 0, 0, 50%) 0%, rgb(128, 128, 128, 50%) 50%, rgb(0, 0, 0, 50%) 100%);
+}
+
+::-webkit-scrollbar-thumb{
+    border: 0.20em solid rgb(41, 23, 16, 100%);
+    border-radius: 100vw;
+    background: rgb(107, 59, 40);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: rgb(82, 45, 30);
+}
+
+.screen2_container_s_zagolovokom{
+    text-align: center;
+    justify-content: flex-start;    
+}
+
+.screen2_zagolovok{
+    font-size: 6vw;
+    padding-bottom: 0;
+}
+
+.screen2_second_zagolovok{
+    font-size: 2.1vw;
+    padding-bottom: 50px;
+}
+
+.zagolovok_altai_russia{
+    text-align: center;
+    font-size: 4vw;
+}
+
+.podzagolovok_altai_russia{
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.parallax1_in_screen2{
+    background: url(images/altai_russian.jpg);
+    filter: brightness(70%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallax_inner_in_screen2{
+    padding: 13% 0;
+}
+
+.text_altai_russia{
+    font-size: 1vw;
+    color: #ffffff;
+    text-align: center;
+    margin: 25px 150px 50px;
+}
+
+.parallax2_in_screen2{
+    background: url(images/vodlozero_karelia.png);
+    filter: brightness(70%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.zagolovok_vodlozero_karelia{
+    text-align: center;
+    font-size: 4vw;
+}
+
+.podzagolovok_vodlozero_karelia{
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.text_vodlozero_karelia{
+    font-size: 1vw;
+    color: #ffffff;
+    text-align: center;
+    margin: 25px 150px 50px
+}
+
+.parallax3_in_screen2{
+    background: url(images/baikal_russia.png);
+    filter: brightness(70%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.zagolovok_baikal_russia{
+    text-align: center;
+    font-size: 4vw;
+}
+
+.podzagolovok_baikal_russia{
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.text_baikal_russia{
+    font-size: 1vw;
+    color: #ffffff;
+    text-align: center;
+    margin: 25px 150px 50px
+}
+
+.top_gradient{
+    width: 100%;
+    height: 250px;
+    background-color: #291710;
+    background-image: linear-gradient(to top, rgb(60,33,22, 100%) 60%, rgb(41, 23, 16, 100%) 100%); 
+}
+
+.bottom_gradient{
+    width: 100%;
+    height: 250px;
+    background-color: #291710;
+    background-image: linear-gradient(to bottom, rgb(60, 33 ,22, 100%) 60%, rgb(41, 23, 16, 100%) 100%);
+}
